@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 st.write("""
 # Tips DataFrame
 """)
-tips = pd.read_csv('../ds-phase-0/learning/datasets/tips.csv')
+tips = pd.read_csv('tips.csv')
 st.dataframe(tips)
 st.dataframe(tips.groupby('day', as_index=False).agg({'total_bill': 'mean'}))
 fig, ax = plt.subplots()
